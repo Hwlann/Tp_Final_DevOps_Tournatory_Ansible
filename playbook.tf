@@ -1,6 +1,6 @@
 ---
 - name: Install ngins & git
-  hosts: jenkins
+  hosts: web
   gather_facts: true
   become: true
   
