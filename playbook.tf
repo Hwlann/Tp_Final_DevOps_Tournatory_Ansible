@@ -1,5 +1,5 @@
 ---
-- name: Install ngins & git
+- name: Install nginx & git
   hosts: web
   gather_facts: true
   become: true
