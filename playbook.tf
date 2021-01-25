@@ -14,3 +14,8 @@
       apt: 
         name: git
         update-cache:true
+
+    - name: Clone git repo
+      git:
+       repo: <repo-html>
+       dest: /var/www/html/
