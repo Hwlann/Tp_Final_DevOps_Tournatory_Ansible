@@ -17,5 +17,5 @@
 
     - name: Clone git repo
       git:
-       repo: <repo-html>
+       repo: "https://github.com/CesarLortet/TP-Final_DevOps-HTML-Cesar_Lortet.git"
        dest: /var/www/html/
