@@ -15,7 +15,14 @@ pipeline {
       AWS_REGION = 'eu-west-3'
     }
     stages {
-        stage('Deploy plabook') {
+        
+        stage('install Ansible') {
+            steps {
+                sh 'sudo apt install ansible'
+            }
+        }
+        
+        stage('Deploy playbook') {
             steps {
                 sh 'ansible-playbook -i inventory playbook.yaml'
             }
