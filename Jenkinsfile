@@ -18,7 +18,7 @@ pipeline {
         
         stage('install Ansible') {
             steps {
-                sh 'sudo apt install ansible'
+                sh 'apt install ansible'
             }
         }
         
